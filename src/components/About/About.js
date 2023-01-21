@@ -1,19 +1,8 @@
 import React from 'react';
-import './About.css'
-import { IoLogoHtml5 } from 'react-icons/io';
-import { SiCss3 } from 'react-icons/si';
-import { SiJavascript } from 'react-icons/si';
-import { SiReact } from 'react-icons/si';
-import { SiTailwindcss } from 'react-icons/si';
-import { SiMongodb } from 'react-icons/si';
-import { SiFirebase } from 'react-icons/si';
-import { SiBootstrap } from 'react-icons/si';
-import { FaNodeJs } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
 
 const About = () => {
     return (
-        <div className='container mx-auto lg:px-32 lg:py-20 p-5 mb-20' id="about" >
+        <div className='container mx-auto lg:px-32 lg:py-20 p-5 mb-20' id="About" >
             <div className='hero-content flex-col lg:flex-row gap-5 items-center justify-center' data-aos="fade-up" data-aos-duration="1000">
                 <div className='col-span-5 ' >
                     <h1 className='text-3xl text-primary font-bold py-2 border-b-4 border-primary w-48'>//ABOUT ME</h1>
@@ -32,22 +21,7 @@ const About = () => {
                 </div>
             </div>
             {/* Skills  */}
-            <div>
-                <h1 className='text-3xl text-primary font-bold py-2 border-b-4 border-primary w-52 lg:text-left' data-aos="zoom-in" data-aos-duration="300">//My Skills</h1>
-                <br />
-                <div className="grid lg:grid-cols-5 grid-cols-2 text-8xl  justify-center text-secondary justify-items-center lg:gap-20 gap-2 lg:pt-10 pt-2" data-aos="zoom-in" data-aos-duration="800">
-                    <div className='hover:text-red-400  duration-500'><IoLogoHtml5 /></div>
-                    <div className='hover:text-blue-600 duration-500'><SiCss3 /></div>
-                    <div className='hover:text-blue-400 duration-500'><SiTailwindcss /></div>
-                    <div className='hover:text-purple-600 duration-500'><SiBootstrap /></div>
-                    <div className='hover:text-yellow-500 duration-500'><SiJavascript /></div>
-                    <div className='hover:text-[#61dafb] duration-500'><SiReact /></div>
-                    <div className='hover:text-[#00ED64] duration-500'><SiMongodb /></div>
-                    <div className='hover:text-yellow-500 duration-500'><SiFirebase /></div>
-                    <div className='hover:text-[#026e00] duration-500'><FaNodeJs /></div>
-                    <div className='hover:text-primary duration-500'><FaGithub /></div>
-                </div>
-            </div>
+
         </div>
     );
 };

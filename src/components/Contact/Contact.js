@@ -23,7 +23,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="h-full my-44 container mx-auto lg:px-32 p-5" data-aos="zoom-in" data-aos-duration="1000" id="contact" >
+        <div className="h-full my-44 container mx-auto lg:px-32 p-5" data-aos="zoom-in" data-aos-duration="1000" id="Contact" >
             <div className="w-full  lg:p-8 space-y-3 rounded-xl  bg-neutral ">
                 <h1 className="text-3xl font-bold text-primary py-2  border-b-4 border-primary w-56">//Contact Us</h1>
                 <form ref={form} onSubmit={sendEmail}>

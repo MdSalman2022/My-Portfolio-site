@@ -15,7 +15,7 @@ const Banner = () => {
     });
 
     return (
-        <div className="hero min-h-screen py-32 " id="hero">
+        <div className="hero h-96 lg:my-60 " id="Home">
             <div className="hero-content text-center w-full">
                 <div>
                     <p className="py-6 text-primary text-2xl lg:text-3xl">Hi there,</p>
