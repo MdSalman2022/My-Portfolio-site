@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { useInView } from 'framer-motion';
 
 const About = () => {
+
+
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
+    useEffect(() => {
+        console.log("Element is in view: ", isInView)
+    }, [isInView])
+
+
     return (
-        <div className='container mx-auto lg:px-32 lg:py-20 p-5 mb-20' id="About" >
+        <div className='container lg:px-16 lg:py-20 p-5 mb-20 mx-auto ' id="About" >
             <div className='hero-content flex-col lg:flex-row gap-5 items-center justify-center' data-aos="fade-up" data-aos-duration="1000">
                 <div className='col-span-5 ' >
-                    <h1 className='text-3xl text-primary font-bold py-2 border-b-4 border-primary w-48'>//ABOUT ME</h1>
+                    <div className="flex flex-col mb-5">
+                        <p className="text-3xl text-primary font-bold py-2">//About Me</p>
+                        <span ref={ref} className={`transition-all duration-1000 delay-100 ${isInView ? 'w-52' : 'w-0'} h-1 bg-primary`}></span>
+                    </div>
                     <p className='text-lg text-secondary font-bold lg:leading-8 lg:tracking-wider py-10'>
                         <div className="starting border border-1 border-primary w-24 inline-block "></div> Hello, I'm Salman, a <span className="text-primary">Frontend Web developer</span>, Who likes to provide solutions for people's projects and business which it is a challenge that i enjoy overcoming. I am a passionate person who pursues his dream, works hard and results oriented. As a metter of fact, I constantly work on improving myself seeking to achieve the best version of myself.
                         <br />

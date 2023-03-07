@@ -36,7 +36,7 @@ const Banner = () => {
                             }}
                         />
                     </h1>
-                    <a role="button" tabindex="0" className="btn btn-outline btn-primary" href="https://drive.google.com/uc?export=download&id=1eqSnAf3uOvLVfX9b8uYcLiTT9b6ziKa6"><FiDownload className='text-xl' /> &nbsp; Download Resume</a>
+                    <a role="button" tabindex="0" className="btn btn-outline btn-primary" href="https://drive.google.com/uc?export=download&id=1QlQaS7LADLW68MPHkhbVgfvBegrAMFQ-"><FiDownload className='text-xl' /> &nbsp; Download Resume</a>
                 </div>
             </div >
         </div >

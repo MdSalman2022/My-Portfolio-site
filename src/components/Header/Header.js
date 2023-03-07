@@ -39,7 +39,7 @@ const Header = () => {
 
     useEffect(() => {
         function handleScroll() {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 150) {
                 setIsFixed(true);
             } else {
                 setIsFixed(false);
@@ -77,14 +77,13 @@ const Header = () => {
                                     >
                                         {page.name}
                                     </ ScrollLink>
-
                                 </li>
                             )
                         }
 
                     </ul>
                 </div>
-                <Link className="btn btn-ghost normal-case text-2xl text-primary" to="/"> //S.Dev  </Link>
+                <Link className="btn btn-ghost normal-case text-2xl text-primary" to="/"> //Salman </Link>
             </div>
             <div className="navbar-center hidden lg:flex  ">
                 <ul className="menu menu-horizontal   ">
@@ -93,7 +92,7 @@ const Header = () => {
                             <li>
                                 < ScrollLink
                                     className='hover:text-primary transition-all duration-100  mx-2 py-4'
-                                    activeClass="transition-all duration-200 border-b-2 border-primary bg-transparent text-primary"
+                                    activeClass="transition-all duration-500 ease-in-out border-b-4 border-primary bg-transparent text-primary"
                                     to={page.name}
                                     spy={true}
                                     smooth={true}
